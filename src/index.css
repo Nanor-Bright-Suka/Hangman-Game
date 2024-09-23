@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .btn {
+    @apply text-4xl uppercase text-black aspect-square border-2 border-black;
+  }
+
+  .btn:active {
+    background-color: hsl(200, 100%, 50%);
+    color: white;
+  }
+
+  .btn.inactive {
+    opacity: .3;
+  }
+
+  .btn:hover:not(:disabled),
+  .btn:focus:not(:disabled){
+    background-color: hsl(200, 100%, 75%);
+  }
+}
