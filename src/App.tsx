@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import  { useCallback, useEffect, useState } from 'react'
 import {words}  from '../src/Words'
 import HangmanDrawing from './HangmanDrawing';
 import HangmanResults from './HangmanResults';

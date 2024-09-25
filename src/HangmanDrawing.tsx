@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const Head:JSX.Element = (
   <div  className='w-[50px] h-12 rounded-full border-4 border-black absolute  top-14 -right-5'/>

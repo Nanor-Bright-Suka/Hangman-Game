@@ -1,4 +1,4 @@
-import React   from 'react'
+
 import {UppercaseAlphabet} from "../src/Keys"
 
 type KeyboarProp = {
