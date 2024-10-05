@@ -63,7 +63,7 @@ function App() {
 
   
   return (
-<div className='mx-w-[800px] flex flex-col gap-6 my-0 mx-auto items-center justify-center'>
+<div className='lg:w-[40%] w-[70%] flex flex-col flex-wrap gap-10 my-0 mx-auto justify-center'>
       {isLoser && (
         <> 
         <div className='text-4xl text-red-600 uppercase'>You Loose - Try Again </div>
@@ -76,15 +76,17 @@ function App() {
         You Wonn !! - Play Again
       </div>
       </>)}
+      <div className='flex flex-col justify-between items-center mx-auto mt-[30%]'>  
       <HangmanDrawing numberOfGuesses={incorrtLett.length} />
       <HangmanResults guessedLett={guessedLett} wordToGuess={wordToGuess} reveal={isLoser}/>
-      <div className="self-stretch">  
+      <div className="self-stretch mt-[10%]">  
       <Keyboard 
       disabled={isLoser || isLoser}
       activeLetters = {guessedLett.filter(letter => wordToGuess.includes(letter))}
       inactiveLetters = {incorrtLett}
       addGuessedLetter = {addGuessedLetter}
       />
+      </div>
       </div>
 </div>
   )
